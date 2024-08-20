@@ -11,7 +11,7 @@ function Header({ openAddWidgetPage, searchQuery, setSearchQuery, onRefresh }) {
         <SearchBox searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         <button onClick={onRefresh}>🔃</button>
         <button>⋮</button>
-        <button>🕓 last 2 days</button>
+        <button>🕓 Select range</button>
       </div>
     </header>
   );

@@ -3,49 +3,64 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 10px; 
     color: black;
-}
-
-.header-section {
+    box-sizing: border-box; 
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 1.5rem; 
+  }
+  
+  .header-section {
     display: flex;
     gap: 1rem;
-}
-
-button {
+    align-items: center; 
+  }
+  
+  button {
     border-radius: 5px;
     border: 1px solid #bab4b4;
     padding: 6px 8px;
-    background: white; 
-    color: black; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-}
-
-button:hover {
-    border-color: blue; 
-    color: blue; 
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    border-color: blue;
+    color: blue;
   }
   
   .search-input {
-    width: 200px;
+    width: 200px; 
+    box-sizing: border-box; 
   }
   
   @media (max-width: 768px) {
+    .header {
+      flex-direction: column; 
+    }
+  
+    .header-section {
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+  
     .search-input {
-      width: 150px;
+      width: 150px; 
     }
   }
   
   @media (max-width: 480px) {
     .search-input {
-      width: 100%;
+      width: 100%; 
+    }
+  
+    button {
+      padding: 8px 12px; 
     }
   }
   
