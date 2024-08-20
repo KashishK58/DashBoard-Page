@@ -26,3 +26,26 @@ button:hover {
     border-color: blue; 
     color: blue; 
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .search-input {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-input {
+      width: 100%;
+    }
+  }
+  

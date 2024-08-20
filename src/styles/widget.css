@@ -54,3 +54,14 @@
   font-size: 14px;
   color: #333;
 }
+
+.widget-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .widget-card {
+    padding: 8px;
+  }
+}

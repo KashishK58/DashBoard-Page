@@ -95,3 +95,26 @@
   background-color: rgb(36, 36, 88); 
   color: white; 
 }
+
+.addpage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .addpage {
+    padding: 10px;
+  }
+}
