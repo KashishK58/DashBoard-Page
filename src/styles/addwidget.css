@@ -1,0 +1,28 @@
+.new-widget-card {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 460px; 
+  min-width: 300px; 
+  height: auto; 
+  border: 2px dashed #007bff;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.add-widget-button {
+  padding: 10px 20px; 
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-widget-button:hover {
+  background-color: #0056b3;
+}

@@ -1,38 +1,161 @@
+.header {
+  background: #eae8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px 1.3rem;
+  color: black;
+}
+
+.header-section {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 6px;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: blue;
+  color: blue;
+}
+
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 25px 30px;
+  background: #eae8e8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-container {
+  overflow-x: auto; 
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section {
+  flex: 1 1 100%; 
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #eae8e8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.widgets-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; 
+  width: max-content;
+}
+
+.widget-card {
+  position: relative;
+  width: 460px; 
+  min-width: 300px; 
+  height: 200px; 
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.add-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #007bff;
+  background: #e7f0ff;
+  width: 300px; 
+  height: 200px; 
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-widget button {
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+  line-height: 1;
+}
+
+.search-input {
+  padding: 5px 6px;
+  border: 1px solid #c4c0c0;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.search-input:hover {
+  border-color: blue;
+  color: blue;
+}
+
+.blur-background {
+  filter: blur(5px);
+}
+
+.main-content {
+  transition: filter 0.3s ease;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 }
